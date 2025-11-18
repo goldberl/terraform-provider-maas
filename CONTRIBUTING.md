@@ -75,8 +75,8 @@ Where
 ## Create a development environment
 ### Setup
 1. Run `make build` to build the provider binary locally, located in `./bin`.
-1. Run `make create-dev-overrides` and follow any output instructions. More info [here](https://developer.hashicorp.com/terraform/cli/config/config-file#development-overrides-for-provider-developers).
-1. Run `make dev-env` to create a development directory and follow any output instructions.
+1. Run `make create_dev_overrides` and follow any output instructions. More info [here](https://developer.hashicorp.com/terraform/cli/config/config-file#development-overrides-for-provider-developers).
+1. Run `make create_dev_env` to create a development directory and follow any output instructions.
 1. In your dev-env directory, use these commands to get started:
    1. Run `terraform fmt` to format the `main.tf` file.
    1. Run `terraform init` to initialize the provider.
