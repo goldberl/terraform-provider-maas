@@ -77,7 +77,7 @@ Where
 1. Run `make build` to build the provider binary locally, located in `./bin`.
 1. Run `make create_dev_overrides` and follow any output instructions. More info [here](https://developer.hashicorp.com/terraform/cli/config/config-file#development-overrides-for-provider-developers).
 1. Run `make create_dev_env` to create a development directory and follow any output instructions.
-1. In your dev-env directory, use these commands to get started:
+1. In your `.devenv` directory, use these commands to get started:
    1. Run `terraform fmt` to format the `main.tf` file.
    1. Run `terraform init` to initialize the provider.
    1. Run `terraform plan` to see the changes that will be applied.
@@ -88,7 +88,7 @@ Where
 Assuming you have already setup dev-overrides:
 1. Make a change to the provider.
 1. Rebuild the provider binary locally with `make build`.
-1. In your dev-env directory, you can immediately run `terraform apply` with your new changes.
+1. In your `.devenv` directory, you can immediately run `terraform apply` with your new changes.
 
 ## Testing
 Tests are written as advised in the [Terraform docs](https://developer.hashicorp.com/terraform/plugin/sdkv2/testing). They are split into unit tests and acceptance tests, with the latter creating real resources in the MAAS environment. Therefore, you will need to ensure MAAS is running locally for these tests to pass.
